@@ -1,0 +1,22 @@
+** Assignment 1 **
+
+					Deadline : 12/10/2020 EOD
+				   Submission to Peer: 11/10/2020 EOD
+				========================================
+
+Task 1:
+
+Calculate cost of carpet where the user provides the length and width of the carpet. 
+The price of the carpet is 100 Rupees per square meter.	
+
+Task 2:
+
+Calculate volume of a cylinder when radius and height is given by the user and print the volume.	
+
+Task 3:
+
+Write a program to compute the future value of a specified principal amount, rate of interest for one year, 
+and a number of years using both compound and simple interests.
+1. CI
+2. SI [Output = Interest + Principal]
+		

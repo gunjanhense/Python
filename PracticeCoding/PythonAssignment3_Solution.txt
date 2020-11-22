@@ -1,0 +1,91 @@
+				Assignment 3: Functions
+			 Submission Date: 16/10/2020  [ 16th of October 2020 ]
+
+					Task 1:
+
+Write a function that inverses the case of the first and fourth letters of a name, and run that function.
+Input: 'smiLe'
+Output: 'Smile'
+
+Input : 'WORLD'
+Output: 'wORlD'
+
+-----------------------------------------------------------------------------------------------------------
+
+def reverse_word():
+    word = input('Please enter a word : ')
+    l = []
+    s = ""
+    u = []
+    for i in word:
+        if i == word[0] or i == word[3] and i not in u:
+            u.append(i)
+            l.append(i.swapcase())
+        else:
+            l.append(i)
+    reversed_word = s.join(l)
+    return reversed_word
+
+reverse_word()
+
+
+-------------------------------------------------------------------------------------------------------------
+
+					Task 2:
+
+Given a string as input to a function should return a string where for every character in the original string 
+there are 'n' same characters in the ouput string where n is the length of the string from 
+the index of the respective character.
+
+Ex 1:
+Input: tcs
+Ouput: tttccs
+Ex 2:
+Input: hello
+Output: hhhhheeeelllllo
+Ex 3:
+Input: 145
+Ouput: 111445
+
+
+------------------------------------------------------------------------------------------------------------
+
+def strings():
+    exp = str(input('Please enter a word: '))
+    l = []
+    s = ''
+    a = len(exp)
+    for i in exp:
+        for j in range(0, len(exp), 1):
+            if i == exp[j] and exp[j] != exp[j-1]:
+                f = i*a
+                a = a-1
+                l.append(f)
+    s = s.join(l)
+    return s
+strings()
+
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+					Task 3:
+Write a function, given a sentence, should return a sentence with the words reversed.
+Input: "hello world python"
+Output: "python world hello"
+
+
+-------------------------------------------------------------------------------------------------------------
+
+def reversed_sent():
+    sent = str(input('Please enter a sentence separated by single space: '))
+    sentlist = sent.split()
+    reversedsent = []
+    for i in range(-1, -len(sentlist)-1, -1):
+        reversedsent.append(sentlist[i])
+        s = " ".join(reversedsent)
+    return s
+reversed_sent()
+
+-------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+Assignment 6
+
+					Deadline:  22nd October, 2020
+
+Task 1:
+
+Create a class named Shape with two attributes x and y. Define two methods namely area and perimeter,
+to calculate the area and perimeter of the shape using the below formulae.
+area = x * y
+perimeter = 2*x + 2*y
+
+Task 2:
+Create another class named Rectangle which also accepts two attributes x, y and inherits the Shape class.
+Create an object of the Rectangle class and calculate the area and perimeter of the created rectangle object.
+
+Task 3:
+Write a function which reverses the characters of a word passed as argument. The function should return 
+a generator object and iterating over that generator object should return each character in the reverse
+order.
+
+def reverse_string(word):
+	# code
+
+for char in reverse_string("python"):
+	print(char, end=" ")
+
+O/P: n o h t y p
